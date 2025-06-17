@@ -1,0 +1,7 @@
+FROM mysql
+MAINTAINER swati
+LABEL version="1.0"
+ENV MYSQL_ROOT_PASSWORD ap1312
+ENV MYSQL_DATABASE wordpressdb
+EXPOSE 3306
+CMD ["mysqld"]
