@@ -1,0 +1,57 @@
+# Docker file commands:
+
+ nano Dockerfile
+  454  docker build -t mymattu .
+  455  docker images
+  456  docker run -d -p 80:80 mynginx
+  457  docker run -d -p 80:80 mymattu
+  458  nano Dockerfile
+  459  docker build -t mymattu .
+  460  docker run -d -p 80:80
+  461  nano Dockerfile
+  462  docker build -t mymattu .
+  463  docker images
+  464  docker rmi $(docker image ls)
+  465  docker rmi -f $(docker image ls)
+  466  docker images
+  467  docker rmi 1ccd440ce99b
+  468  docker images
+  469  docker rm 2d42491e413d
+  470  docker rmi 1ccd440ce99b
+  471  docker images
+  472  docker rmi bf07fec943ec
+  473  docker ps -a
+  474  docker container rm $(docker container ls -aq)
+  475  docker ps -a
+  476  docker images
+  477  docker rmi  bf07fec943ec
+  478  docker images
+  479  docker build -it mymattu
+  480  docker build -t mymattu .
+  481  docker run -d --name atharva -p 80:80 mymattu
+  482  docker exec -it 040940e31cd8533d42c6 bash
+  483  nano Dockerfile
+  484  nano mysqlDockerfile
+  485  docker build -f mysqlDockerfile -t omi  .
+  486  docker images
+  487  docker exec -it omi bash
+  488  docker run -d --name akm -p 3306 omi
+  489  docker exec -it akm bash
+  490  history
+  491  ls
+  492  cd Docker/
+  493  git remote add origin https://github.com/AtharvaKishorMatale/Dockerfile_wordpress.git
+  494  git init
+  495  git remote add origin https://github.com/AtharvaKishorMatale/Dockerfile_wordpress.git
+  496  git add .
+  497  git commit -m "Dockerfile"
+  498  git push origin main
+  499  git branch
+  500  git checkout main
+  501  git checkout master
+  502  git branch main
+  503  git branch
+  504  git checkout main
+  505  git push origin main
+  506  git pull origin main --rebase
+  507  git push origin main
